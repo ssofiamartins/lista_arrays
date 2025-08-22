@@ -8,11 +8,14 @@
     */
 
     //ENTRADA
-
+    const num1 = Number(prompt(`Informe um número`));
+    const num2 = Number(prompt(`Informe outro número`));
+    const num3 = Number(prompt(`Informe mais um número`));
 
     //PROCESSAMENTO
-
+    const numeros = [num1, num2, num3];
+    numeros.sort((a, b) => b-a);
 
     //SAÍDA
-
+    alert(numeros.join(" - "));
 </script>
