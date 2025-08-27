@@ -7,17 +7,64 @@
     let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     let carrosHatch = ["308", "Focus", "i30"];
     
-    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta,
+     peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
     Apresente a lista final de cada tipo de veículo.
     */
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
 
+    const carro1 = prompt(`Informe um veículo para ser inserido na lista`);
+    const carro2 = prompt(`Informe mais um veículo para ser inserido na lista`);
+    const carro3 = prompt(`Informe outro veículo para ser inserido na lista`);
 
+    const tipo1 = Number(prompt(`Informe se o ${carro1} é: 1- SUV, 2- Sedan, 3- Hatch`));
+    const tipo2 = Number(prompt(`Informe se o ${carro2} é: 1- SUV, 2- Sedan, 3- Hatch`));
+    const tipo3 = Number(prompt(`Informe se o ${carro3} é: 1- SUV, 2- Sedan, 3- Hatch`));
     //PROCESSAMENTO
 
+    if (tipo1 == 1) {
+        carrosSUV.push(carro1)
+    }
+    else if (tipo1 == 2) {
+        carrosSedan.push(carro1)
+    }
+    else if (tipo1 == 3) {
+        carrosHatch.push(carro1)
+    }
+    else {
+        alert(`Tipo de carro inválido`)
+    }
+    if (tipo2 == 1) {
+        carrosSUV.push(carro2)
+    }
+    else if (tipo2 == 2) {
+        carrosSedan.push(carro2)
+    }
+    else if (tipo2 == 3) {
+        carrosHatch.push(carro2)
+    }
+    else {
+        alert(`Tipo de carro inválido`)
+    }
+    if (tipo3 == 1) {
+        carrosSUV.push(carro3)
+    }
+    else if (tipo3 == 2) {
+        carrosSedan.push(carro3)
+    }
+    else if (tipo3 == 3) {
+        carrosHatch.push(carro3)
+    }
+    else {
+        alert(`Tipo de carro inválido`)
+    }
 
     //SAÍDA
+    document.write(`A lista final de veículos SUV é: ${carrosSUV.join(" - ")} <br> A lista final de veículos Sedan é: ${carrosSedan.join(" - ")} <br> A lista final de veículos Hatch é: ${carrosHatch.join(" - ")}`)
 
 </script>

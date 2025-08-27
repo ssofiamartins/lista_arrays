@@ -9,11 +9,15 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let addItem = prompt(`Informe qual carro deseja adicionar na lista:`);
+    
 
     //PROCESSAMENTO
-
+    let listaNova = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let lista = listaNova.push(addItem);
 
     //SAÍDA
-
+    alert(`A lista antes da adição do veículo é: ${carrosSUV.join(" - ")}`);
+    alert(`A lista após a adição do veículo é: ${listaNova.join(" - ")}`);
 </script>

@@ -9,11 +9,31 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    
+    let removeCarro = Number(prompt(`Qual carro deseja remover da lista? 1 - tiggo, 2 - Sportage, 3 - Tucson, 4 - EcoSport`));
 
     //PROCESSAMENTO
+    let listaNova = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
 
+    if (removeCarro === 1){
+        listaNova.splice(0, 1);
+    }
+    else if (removeCarro === 2){
+        listaNova.splice(1, 1);
+    }
+    else if (removeCarro === 3){
+        listaNova.splice(2, 1);
+    }
+    else if (removeCarro === 4){
+        listaNova.splice(3, 1);
+    }
+    else {
+        alert(`Valor inválido.`);
+    }
 
     //SAÍDA
+    alert(`A lista antes da remoção do veículo é: ${carrosSUV.join(" - ")}`);
+    alert(`A lista após a remoção do veículo é: ${listaNova.join(" - ")}`);
 
 </script>
