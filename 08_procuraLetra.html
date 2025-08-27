@@ -16,7 +16,11 @@
 
     const procura = palavra.search(letra);
 
-
     //SAÍDA
-
+    if (procura >= 0) {
+        alert(`A letra foi encontrada e está na posição ${procura + 1}`);
+    }
+    else {
+        alert(`A letra não foi encontrada na palavra digitada!`);
+    }
 </script>
